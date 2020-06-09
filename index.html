@@ -8,10 +8,97 @@
 <body>
 
     <div class="movie-container">
-        <label>
-            Pick a movie:
-        </label>
+        <label>Выберите фильм:</label>
+        <select id="movie">
+            <option value="4">Большой куш (4р)</option>
+            <option value="7">Безумный Макс: дорога ярости (7р)</option>
+            <option value="13">Карты, деньги, два ствола (13р)</option>
+            <option value="28">Книга Илая (28р)</option>
+        </select>
     </div>
+
+    <ul class="showcase">
+        <li>
+            <div class="seat"></div>
+            <small>Доступные</small>
+        </li>
+        <li>
+            <div class="seat selected"></div>
+            <small>Выбранные</small>
+        </li>
+        <li>
+            <div class="seat occupied"></div>
+            <small>Забронированные</small>
+        </li>
+    </ul>
+
+    <div class="container">
+
+        <div class="screen"></div>
+
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat occupied"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat occupied"></div>
+            <div class="seat occupied"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat occupied"></div>
+            <div class="seat occupied"></div>
+            <div class="seat occupied"></div>
+        </div>
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat occupied"></div>
+            <div class="seat occupied"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+    </div>
+
+    <p class="text">Вы выбрали <span id="count">0</span> мест, общей стоимостью <span id="total">0</span>р</p>
 
 <script src="script.js"></script>
 </body>
